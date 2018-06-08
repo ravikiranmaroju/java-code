@@ -19,8 +19,6 @@ pipeline {
                 sh '''curl -u admin:admin -T target/grants.war "http://ec2-18-188-120-206.us-east-2.compute.amazonaws.com:8081/artifactory/articatory-jenkins/grants.war"'''
             }
         }
-           }
-        }
         stage('deploy') {
             steps {
                 sh '''sudo apt update -y
