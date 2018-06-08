@@ -22,7 +22,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh '''curl -u admin:admin -O "http://ec2-18-218-164-124.us-east-2.compute.amazonaws.com:8080/artifactory/articatory-jenkins/grants.war"'''
+                sh '''curl -u admin:admin -O "https://ec2-18-188-120-206.us-east-2.compute.amazonaws.com:8081/artifactory/articatory-jenkins/grants.war"'''
             }
         }
     }
