@@ -17,7 +17,7 @@ pipeline {
         }
         stage('push') {
             steps {
-                sh '''curl -u admin:admin -T target/grants.war "http://ec2-18-188-120-206.us-east-2.compute.amazonaws.com:8081/artifactory/articatory-jenkins/grants.war"'''
+                echo 'pushing'
             }
         }
         stage('deploy') {
