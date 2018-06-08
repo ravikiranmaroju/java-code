@@ -22,7 +22,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh '''sudo apt update -y
+                sh '''curl -u admin:admin -O "http://ec2-18-218-164-124.us-east-2.compute.amazonaws.com:8080/artifactory/articatory-jenkins/grants.war"'''
             }
         }
     }
