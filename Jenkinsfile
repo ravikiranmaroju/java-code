@@ -17,12 +17,12 @@ pipeline {
         }
         stage('push') {
             steps {
-                echo 'pushing'
+                echo 'pushing to artifactory server'
             }
         }
         stage('deploy') {
             steps {
-                echo 'deploying'
+                echo 'deploying to tomcat servre'
             }
         }
     }
