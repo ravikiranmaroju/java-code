@@ -1,0 +1,32 @@
+root@ip-172-31-25-131:/home/ubuntu/java-code# ls -l
+total 20
+-rw-r--r-- 1 root root  730 Aug 16 05:20 Jenkinsfile
+-rw-r--r-- 1 root root   22 Aug 16 05:20 README.md
+-rw-r--r-- 1 root root 2031 Aug 16 05:20 pom.xml
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test1
+root@ip-172-31-25-131:/home/ubuntu/java-code# echo "hello world" > newfile
+root@ip-172-31-25-131:/home/ubuntu/java-code# ls -l
+total 24
+-rw-r--r-- 1 root root  730 Aug 16 05:20 Jenkinsfile
+-rw-r--r-- 1 root root   22 Aug 16 05:20 README.md
+-rw-r--r-- 1 root root   12 Aug 16 05:23 newfile
+-rw-r--r-- 1 root root 2031 Aug 16 05:20 pom.xml
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test1
+root@ip-172-31-25-131:/home/ubuntu/java-code# cat newfile 
+hello world
+root@ip-172-31-25-131:/home/ubuntu/java-code# git push origin master
+Everything up-to-date
+root@ip-172-31-25-131:/home/ubuntu/java-code# git config --global credential.helper cache
+root@ip-172-31-25-131:/home/ubuntu/java-code# git config --global credential.helper 'cache --timeout=3600'
+root@ip-172-31-25-131:/home/ubuntu/java-code# git push origin master
+Everything up-to-date
+root@ip-172-31-25-131:/home/ubuntu/java-code# ls -l
+total 24
+-rw-r--r-- 1 root root  730 Aug 16 05:20 Jenkinsfile
+-rw-r--r-- 1 root root   22 Aug 16 05:20 README.md
+-rw-r--r-- 1 root root   12 Aug 16 05:23 newfile
+-rw-r--r-- 1 root root 2031 Aug 16 05:20 pom.xml
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test
+-rw-r--r-- 1 root root   12 Aug 16 05:22 test1
